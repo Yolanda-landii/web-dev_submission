@@ -1,361 +1,137 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Portfolio</title>
-    <link rel="stylesheet" href="styles.css" />
-    <link rel="stylesheet" href="mediaqueries.css" />
-  
-  </head>
-  <body>
-
-    <title>Navigation Bar with Logo Example</title>
-    <script src="https://kit.fontawesome.com/1165876da6.js" crossorigin="anonymous"></script>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="mediaqueries.css">
+  <script src="https://kit.fontawesome.com/1165876da6.js" crossorigin="anonymous"></script>
+  <script src="script.js" defer></script>
 </head>
 <body style="font-family: Arial, sans-serif; margin: 0; padding: 0;">
 
-    <header >
-        <div class="logo">
-            <img src="logo/IMG_5896.jpg" alt="Logo" class="logo" >
-        </div>
-        <nav >
-          <ul class="nav-links">
-            <li><a href="#about">About</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contacts">Contact</a></li>
-          </ul>
-        </nav>
-    </header>
+<header>
+  <div class="logo">
+    <img src="logo/IMG_5896.jpg" alt="Logo">
+  </div>
+  <nav>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+</header>
 
-    <div>
-        <video autoplay muted loop >
-            <source src="video/WhatsApp Video 2024-04-15 at 11.22.57.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-        </video>
+<div>
+  <video autoplay muted loop>
+    <source src="video/WhatsApp Video 2024-04-15 at 11.22.57.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+</div>
+
+<section id="profile">
+  <div class="section__pic-container">
+    <img src="image/IMG_0577.jpeg" alt="Yolanda Mabotja profile picture">
+  </div>
+  <div class="section__text">
+    <p class="section__text__p1">Hello, I'm</p>
+    <h1 class="title"></h1>
+    <p class="section__text__p2"></p>
+    <div class="btn-container">
+      <button class="btn btn-color-1" onclick="location.href='./#contact'">
+        Contact Info
+      </button>
     </div>
-    <section id="profile">
-        <div class="section__pic-container">
-          <img src="image/IMG_0577.jpeg" alt="Yolanda Mabotja profile picture" />
-        </div>
-        <div class="section__text">
-          <p class="section__text__p1">Hello, I'm</p>
-          <h1 class="title">Yolanda Mabotja</h1>
-          <p class="section__text__p2">Software Developer and Technical Director</p>
-          <div class="btn-container">
-           
-            <button class="btn btn-color-1" onclick="location.href='./#footer'">
-              Contact Info
-            </button>
-          </div>
-          <div id="socials-container">
-            <img
-              src="image/linkedin.png"
-              alt="My LinkedIn profile"
-              class="icon"
-              onclick="location.href='https://linkedin.com/in/yolanda-mabotja-8ab563232/'"
-            />
-            <img
-              src="image/github.png"
-              alt="My Github profile"
-              class="icon"
-              onclick="location.href='https://github.com/Yolanda-landii'"
-            />
-          </div>
-        </div>
-      </section>
+    <div id="socials-container"></div>
+  </div>
+</section>
 
-    <section id="about">
-        <p class="section__text__p1">Get To Know More</p>
-        <h1 class="title">About Me</h1>
-        <div class="section-container">
-          <div class="section__pic-container">
-            <img
-              src="image/IMG_0998.jpeg"
-              alt="Profile picture"
-              class="about-pic"
-            />
-          </div>
-          <div class="about-details-container">
-            <div class="about-containers">
-              <div class="details-container">
-                <img
-                  src="image/experience.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <h3>Experience</h3>
-                <p> <br />Python Animation Technical Director</p>
-              </div>
-              <div class="details-container">
-                <img
-                  src="image/education.png"
-                  alt="Education icon"
-                  class="icon"
-                />
-                <h3>Education</h3>
-                <p>WeThinkCode_:<br />NQF 5 Information Technology in Systems Development</p>
-              </div>
-            </div>
-            <div class="text-container">
-              <p>
-                Innovative Software Developer with expertise in Python,HTML and CSS,JavaScript,
-                Java, SQL, and C#. Adept at thriving in dynamic environments that foster
-                experimentation and innovation. Known for introducing fresh perspectives and
-                thought-provoking ideas, I excel in cultivating strengths in software testing,
-                programming, and software development. My diverse background positions me to
-                bring a unique approach to web development projects. I thrive in a work culture that
-                champions high-energy teamwork, coupled with a spirit of positivity and
-                collaboration.
-              </p>
-            </div>
-          </div>
+<section id="about">
+  <p class="section__text__p1">Get To Know More</p>
+  <h1 class="title">About Me</h1>
+  <div class="section-container">
+    <div class="section__pic-container">
+      <img src="image/IMG_0998.jpeg" alt="Profile picture" class="about-pic">
+    </div>
+    <div class="about-details-container">
+      <div class="about-containers">
+        <div class="details-container">
+          <img src="image/experience.png" alt="Experience icon" class="icon">
+          <h3>Experience</h3>
+          <div class="article-container"></div>
         </div>
-        <img
-          src="image/arrow.png"
-          alt="Arrow icon"
-          class="icon arrow"
-          onclick="location.href='./#experience'"
-        />
-      </section>
-    </section>
-    <section id="experience">
-      <p class="section__text__p1">Explore My</p>
-      <h1 class="title">Experience</h1>
-      <div class="experience-details-container">
-        <div class="about-containers">
-          <div class="details-container">
-            <h2 class="experience-sub-title">Frontend Development</h2>
-            <div class="article-container">
-              <article>
-                <img
-                  src="image/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>HTML</h3>
-                  <p>Experienced</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="image/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>CSS</h3>
-                  <p>Experienced</p>
-                </div>
-              </article>
-              
-              <article>
-                <img
-                  src="image/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>JavaScript</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              
-              
-            </div>
-          </div>
-          <div class="details-container">
-            <h2 class="experience-sub-title">BackEnd Development</h2>
-            <div class="article-container">
-              <article>
-                <img
-                  src="image/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>C#</h3>
-                  <p>Basic</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="image/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Python</h3>
-                  <p>Experienced</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="image/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Java</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="image/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Docker</h3>
-                  <p>Basic</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="image/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Django</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="image/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Git</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-            </div>
-          </div>
+        <div class="details-container">
+          <img src="image/education.png" alt="Education icon" class="icon">
+          <h3>Education</h3>
+          <p></p>
         </div>
       </div>
-      <img
-        src="image/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#projects'"
-      />
-    </section>
+      <div class="text-container"></div>
+    </div>
+  </div>
 </section>
+
+<section id="experience">
+  <p class="section__text__p1">Explore My</p>
+  <h1 class="title">Experience</h1>
+  <div class="experience-details-container">
+    <div class="about-containers">
+      <div class="details-container">
+        <h2 class="experience-sub-title">Frontend Development</h2>
+        <div class="article-container"></div>
+      </div>
+      <div class="details-container">
+        <h2 class="experience-sub-title">BackEnd Development</h2>
+        <div class="article-container"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
 <section id="projects">
   <p class="section__text__p1">Browse My Recent</p>
   <h1 class="title">Projects</h1>
   <div class="experience-details-container">
-    <div class="about-containers">
-      <div class="details-container color-container">
-        <div class="article-container">
-          <img
-            src="image/Project-Management-Blogs.png"
-            alt="Project 1"
-            class="project-img"
-          />
-        </div>
-        <h2 class="experience-sub-title project-title">Project One</h2>
-        <div class="btn-container">
-          <button
-            class="btn btn-color-2 project-btn"
-            onclick="location.href='https://github.com/Yolanda-landii/Django-Blog'"
-          >
-            Github
-          </button>
-         
-        </div>
-      </div>
-      <div class="details-container color-container">
-        <div class="article-container">
-          <img
-            src="image/rar.jpg"
-            alt="Project 2"
-            class="project-img"
-          />
-        </div>
-        <h2 class="experience-sub-title project-title">Project Two</h2>
-        <div class="btn-container">
-          <button
-            class="btn btn-color-2 project-btn"
-            onclick="location.href='https://github.com/Yolanda-landii/RazorPagesMovie'"
-          >
-            Github
-          </button>
-          
-        </div>
-      </div>
-      <div class="details-container color-container">
-        <div class="article-container">
-          <img
-            src="image/tictactoe.jpg"
-            alt="Project 3"
-            class="project-img"
-          />
-        </div>
-        <h2 class="experience-sub-title project-title">Project Three</h2>
-        <div class="btn-container">
-          <button
-            class="btn btn-color-2 project-btn"
-            onclick="location.href='https://github.com/Yolanda-landii/Tic-tac-toe'"
-          >
-            Github
-          </button>
-        
-        </div>
-      </div>
-    </div>
+    <div class="about-containers"></div>
   </div>
-  <img
-    src="image/arrow.png"
-    alt="Arrow icon"
-    class="icon arrow"
-    onclick="location.href='./#contact'"
-  />
+</section>
 
-    <section id="contact">
-      <p class="section__text__p1">Get in Touch</p>
-      <h1 class="title">Contact Me</h1>
-      <div>
-        <form action="submit.php" method="post">
-          <div class="form-group">
-              <label for="name">Name and Surname:</label>
-              <input type="text" id="name" name="name" required>
-          </div>
-          <div class="form-group">
-              <label for="email">Email Address:</label>
-              <input type="email" id="email" name="email" required>
-          </div>
-          <div class="form-group">
-              <label for="message">Message:</label>
-              <textarea id="message" name="message" rows="4" required></textarea>
-          </div>
-          <div class="form-group">
-              <input type="submit" value="Submit">
-          </div>
-      </form>
+<section id="contact">
+  <p class="section__text__p1">Get in Touch</p>
+  <h1 class="title">Contact Me</h1>
+  <div>
+    <form id="contactForm">
+      <label for="name">Your name:</label>
+        <input type="text" id="name" name="name" required>
+        <label for="surname">Your surname:</label>
+        <input type="text" id="surname" name="surname" required>
+        <label for="email">Your email:</label>
+        <input type="email" id="email" name="email" required>
+        <label for="message">Your message:</label>
+        <textarea id="message" name="message" required></textarea>
+        <input type="hidden" name="_subject" value="New form submission">
+        <button type="submit">Send</button>
+    </form>
+  </div>
+</section>
+
+<footer>
+  <nav>
+    <div class="nav-links-container">
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
     </div>
-    </section>
-    <footer>
-      <nav>
-        <div class="nav-links-container">
-          <ul class="nav-links">
-            <li><a href="#about">About</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contacts">Contact</a></li>
-          </ul>
-        </div>
-      </nav>
-      <p>Copyright &#169; 2023 Yolanda Mabotja. All Rights Reserved.</p>
-    </footer>
-    
-   
+  </nav>
+  <p id="copyright"></p>
+</footer>
+
 </body>
 </html>
