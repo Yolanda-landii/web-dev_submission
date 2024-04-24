@@ -36,6 +36,24 @@ document.addEventListener("DOMContentLoaded", function() {
       { technology: 'Git', level: 'Intermediate' }
   ];
   const education = 'NQF 5 Information Technology in Systems Development';
+  const experience = 'Animation Technical director';
+  
+  // Update name, surname, and titles
+  const nameSurnameElement = document.querySelector('.section__text__p2');
+  if (nameSurnameElement) {
+    nameSurnameElement.textContent = 'Software Developer and Technical Director';
+    console.log("Title updated: Software Developer and Technical Director");
+  } else {
+    console.log("Name and surname element not found");
+  }
+
+  const titleElement = document.querySelector('.title');
+  if (titleElement) {
+    titleElement.textContent = `${name} ${surname}`;
+    console.log("Name and surname updated:", `${name} ${surname}`);
+  } else {
+    console.log("Title element not found");
+  }
 
   // Update name in heading
   const heading = document.querySelector('header h1');
@@ -45,16 +63,29 @@ document.addEventListener("DOMContentLoaded", function() {
   } else {
     console.log("Header h1 not found");
   }
+  // Add GitHub and LinkedIn icons
+  const socialsContainer = document.getElementById('socials-container');
+  if (socialsContainer) {
+    const githubIcon = document.createElement('a');
+    githubIcon.href = 'https://github.com/Yolanda-landii'; 
+    githubIcon.target = '_blank';
+    githubIcon.innerHTML = '<i class="fab fa-github"></i>'; 
 
+    const linkedinIcon = document.createElement('a');
+    linkedinIcon.href = '#https://www.linkedin.com/in/yolanda-mabotja-8ab563232/'; 
+    linkedinIcon.target = '_blank';
+    linkedinIcon.innerHTML = '<i class="fab fa-linkedin"></i>'; 
 
-  // Display bio
-  const bioElement = document.querySelector('#profile .section__text__p2');
-  if (bioElement) {
-    bioElement.innerText = name,surname;
-    console.log("Bio updated:", bio);
+    socialsContainer.appendChild(githubIcon);
+    socialsContainer.appendChild(linkedinIcon);
+
+    console.log("GitHub and LinkedIn icons added");
   } else {
-    console.log("Profile bio element not found");
+    console.log("Socials container not found");
   }
+
+
+ 
 
    // Display projects
   const projectsContainer = document.querySelector('#projects .about-containers');
@@ -120,14 +151,23 @@ document.addEventListener("DOMContentLoaded", function() {
   }
   
 
-   // Display education
-   const educationElement = document.querySelector('#about .about-containers .details-container:nth-child(2) p');
-   if (educationElement) {
-     educationElement.innerText = education;
-     console.log("Education updated:", education);
+   // Display experience
+   const experienceElement = document.querySelector('#about .about-containers .details-container:nth-child(1) p');
+   if (experienceElement) {
+     experienceElement.innerText = experience;
+     console.log("Experience updated:", experience);
    } else {
-     console.log("Education element not found");
+     console.log("Experience element not found");
    }
+
+    // Display education
+    const educationElement = document.querySelector('#about .about-containers .details-container:nth-child(2) p');
+    if (educationElement) {
+      educationElement.innerText = education;
+      console.log("Education updated:", education);
+    } else {
+      console.log("Education element not found");
+    }
  
    // Add paragraph to About section
    const aboutTextContainer = document.querySelector('#about .text-container');
